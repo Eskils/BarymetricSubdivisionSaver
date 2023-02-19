@@ -7,18 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6BAAB47329A219A600837C9D /* SubdivisionSaverView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BAAB47229A219A600837C9D /* SubdivisionSaverView.h */; };
-		6BAAB47529A219A600837C9D /* SubdivisionSaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB47429A219A600837C9D /* SubdivisionSaverView.m */; };
+		6BAAB47C29A219EC00837C9D /* SubdivisionSaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB47B29A219EC00837C9D /* SubdivisionSaverView.swift */; };
+		6BAAB48329A21BA100837C9D /* Point+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB48129A21BA100837C9D /* Point+Extension.swift */; };
+		6BAAB48429A21BA100837C9D /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB48229A21BA100837C9D /* Array+Extension.swift */; };
+		6BAAB48829A21BAC00837C9D /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB48529A21BAC00837C9D /* Edge.swift */; };
+		6BAAB48929A21BAC00837C9D /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB48629A21BAC00837C9D /* Point.swift */; };
+		6BAAB48A29A21BAC00837C9D /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB48729A21BAC00837C9D /* Triangle.swift */; };
+		6BAAB49229A21C9B00837C9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB49129A21C9B00837C9D /* AppDelegate.swift */; };
+		6BAAB49429A21C9B00837C9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB49329A21C9B00837C9D /* ViewController.swift */; };
+		6BAAB49629A21C9C00837C9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BAAB49529A21C9C00837C9D /* Assets.xcassets */; };
+		6BAAB49E29A21CA800837C9D /* SubdivisionSaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB47B29A219EC00837C9D /* SubdivisionSaverView.swift */; };
+		6BAAB49F29A21CA800837C9D /* SubdivisionScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB47D29A21B7200837C9D /* SubdivisionScene.swift */; };
+		6BAAB4A029A21CAD00837C9D /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB48229A21BA100837C9D /* Array+Extension.swift */; };
+		6BAAB4A129A21CAD00837C9D /* Point+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB48129A21BA100837C9D /* Point+Extension.swift */; };
+		6BAAB4A229A21CB100837C9D /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB48629A21BAC00837C9D /* Point.swift */; };
+		6BAAB4A329A21CB100837C9D /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB48729A21BAC00837C9D /* Triangle.swift */; };
+		6BAAB4A429A21CB100837C9D /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB48529A21BAC00837C9D /* Edge.swift */; };
+		6BAAB4A629A21CEF00837C9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BAAB4A529A21CEF00837C9D /* Main.storyboard */; };
+		6BAAB4A829A21F2F00837C9D /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB4A729A21F2F00837C9D /* Store.swift */; };
+		6BAAB4A929A21F2F00837C9D /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB4A729A21F2F00837C9D /* Store.swift */; };
+		6BAAB4AC29A2264700837C9D /* BackgroundScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB4AA29A2264700837C9D /* BackgroundScene.swift */; };
+		6BAAB4AD29A2318000837C9D /* SubdivisionScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB47D29A21B7200837C9D /* SubdivisionScene.swift */; };
+		6BAAB4AF29A2509900837C9D /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BAAB4AE29A2509900837C9D /* ConfigureSheet.xib */; };
+		6BAAB4B029A2509900837C9D /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BAAB4AE29A2509900837C9D /* ConfigureSheet.xib */; };
+		6BAAB4B229A250C700837C9D /* ConfigureSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB4B129A250C700837C9D /* ConfigureSheetController.swift */; };
+		6BAAB4B329A250C700837C9D /* ConfigureSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB4B129A250C700837C9D /* ConfigureSheetController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6BAAB46F29A219A600837C9D /* SubdivisionSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SubdivisionSaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BAAB47229A219A600837C9D /* SubdivisionSaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubdivisionSaverView.h; sourceTree = "<group>"; };
-		6BAAB47429A219A600837C9D /* SubdivisionSaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubdivisionSaverView.m; sourceTree = "<group>"; };
+		6BAAB47B29A219EC00837C9D /* SubdivisionSaverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubdivisionSaverView.swift; sourceTree = "<group>"; };
+		6BAAB47D29A21B7200837C9D /* SubdivisionScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubdivisionScene.swift; sourceTree = "<group>"; };
+		6BAAB48129A21BA100837C9D /* Point+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Point+Extension.swift"; sourceTree = "<group>"; };
+		6BAAB48229A21BA100837C9D /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		6BAAB48529A21BAC00837C9D /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		6BAAB48629A21BAC00837C9D /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		6BAAB48729A21BAC00837C9D /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		6BAAB48F29A21C9B00837C9D /* SubdivisionSaver.Preview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubdivisionSaver.Preview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BAAB49129A21C9B00837C9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6BAAB49329A21C9B00837C9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6BAAB49529A21C9C00837C9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6BAAB49A29A21C9C00837C9D /* SubdivisionSaver_Preview.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SubdivisionSaver_Preview.entitlements; sourceTree = "<group>"; };
+		6BAAB4A529A21CEF00837C9D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6BAAB4A729A21F2F00837C9D /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		6BAAB4AA29A2264700837C9D /* BackgroundScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundScene.swift; sourceTree = "<group>"; };
+		6BAAB4AE29A2509900837C9D /* ConfigureSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
+		6BAAB4B129A250C700837C9D /* ConfigureSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureSheetController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6BAAB46C29A219A600837C9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BAAB48C29A21C9B00837C9D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				6BAAB47129A219A600837C9D /* SubdivisionSaver */,
+				6BAAB49029A21C9B00837C9D /* SubdivisionSaver.Preview */,
 				6BAAB47029A219A600837C9D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				6BAAB46F29A219A600837C9D /* SubdivisionSaver.saver */,
+				6BAAB48F29A21C9B00837C9D /* SubdivisionSaver.Preview.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -47,10 +94,47 @@
 		6BAAB47129A219A600837C9D /* SubdivisionSaver */ = {
 			isa = PBXGroup;
 			children = (
-				6BAAB47229A219A600837C9D /* SubdivisionSaverView.h */,
-				6BAAB47429A219A600837C9D /* SubdivisionSaverView.m */,
+				6BAAB47B29A219EC00837C9D /* SubdivisionSaverView.swift */,
+				6BAAB47D29A21B7200837C9D /* SubdivisionScene.swift */,
+				6BAAB4AA29A2264700837C9D /* BackgroundScene.swift */,
+				6BAAB4AE29A2509900837C9D /* ConfigureSheet.xib */,
+				6BAAB4B129A250C700837C9D /* ConfigureSheetController.swift */,
+				6BAAB4A729A21F2F00837C9D /* Store.swift */,
+				6BAAB48029A21B8E00837C9D /* Extensions */,
+				6BAAB47F29A21B8200837C9D /* Models */,
 			);
 			path = SubdivisionSaver;
+			sourceTree = "<group>";
+		};
+		6BAAB47F29A21B8200837C9D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6BAAB48529A21BAC00837C9D /* Edge.swift */,
+				6BAAB48629A21BAC00837C9D /* Point.swift */,
+				6BAAB48729A21BAC00837C9D /* Triangle.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6BAAB48029A21B8E00837C9D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6BAAB48229A21BA100837C9D /* Array+Extension.swift */,
+				6BAAB48129A21BA100837C9D /* Point+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6BAAB49029A21C9B00837C9D /* SubdivisionSaver.Preview */ = {
+			isa = PBXGroup;
+			children = (
+				6BAAB49129A21C9B00837C9D /* AppDelegate.swift */,
+				6BAAB49329A21C9B00837C9D /* ViewController.swift */,
+				6BAAB49529A21C9C00837C9D /* Assets.xcassets */,
+				6BAAB4A529A21CEF00837C9D /* Main.storyboard */,
+				6BAAB49A29A21C9C00837C9D /* SubdivisionSaver_Preview.entitlements */,
+			);
+			path = SubdivisionSaver.Preview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,7 +144,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BAAB47329A219A600837C9D /* SubdivisionSaverView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +168,23 @@
 			productReference = 6BAAB46F29A219A600837C9D /* SubdivisionSaver.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
+		6BAAB48E29A21C9B00837C9D /* SubdivisionSaver.Preview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BAAB49B29A21C9C00837C9D /* Build configuration list for PBXNativeTarget "SubdivisionSaver.Preview" */;
+			buildPhases = (
+				6BAAB48B29A21C9B00837C9D /* Sources */,
+				6BAAB48C29A21C9B00837C9D /* Frameworks */,
+				6BAAB48D29A21C9B00837C9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SubdivisionSaver.Preview;
+			productName = SubdivisionSaver.Preview;
+			productReference = 6BAAB48F29A21C9B00837C9D /* SubdivisionSaver.Preview.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,9 +192,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					6BAAB46E29A219A600837C9D = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+					6BAAB48E29A21C9B00837C9D = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -113,6 +218,7 @@
 			projectRoot = "";
 			targets = (
 				6BAAB46E29A219A600837C9D /* SubdivisionSaver */,
+				6BAAB48E29A21C9B00837C9D /* SubdivisionSaver.Preview */,
 			);
 		};
 /* End PBXProject section */
@@ -122,6 +228,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BAAB4AF29A2509900837C9D /* ConfigureSheet.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BAAB48D29A21C9B00837C9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BAAB49629A21C9C00837C9D /* Assets.xcassets in Resources */,
+				6BAAB4A629A21CEF00837C9D /* Main.storyboard in Resources */,
+				6BAAB4B029A2509900837C9D /* ConfigureSheet.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +249,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BAAB47529A219A600837C9D /* SubdivisionSaverView.m in Sources */,
+				6BAAB48329A21BA100837C9D /* Point+Extension.swift in Sources */,
+				6BAAB48929A21BAC00837C9D /* Point.swift in Sources */,
+				6BAAB4A829A21F2F00837C9D /* Store.swift in Sources */,
+				6BAAB47C29A219EC00837C9D /* SubdivisionSaverView.swift in Sources */,
+				6BAAB48829A21BAC00837C9D /* Edge.swift in Sources */,
+				6BAAB48A29A21BAC00837C9D /* Triangle.swift in Sources */,
+				6BAAB4AD29A2318000837C9D /* SubdivisionScene.swift in Sources */,
+				6BAAB4B229A250C700837C9D /* ConfigureSheetController.swift in Sources */,
+				6BAAB48429A21BA100837C9D /* Array+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BAAB48B29A21C9B00837C9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BAAB49E29A21CA800837C9D /* SubdivisionSaverView.swift in Sources */,
+				6BAAB4A029A21CAD00837C9D /* Array+Extension.swift in Sources */,
+				6BAAB49429A21C9B00837C9D /* ViewController.swift in Sources */,
+				6BAAB49F29A21CA800837C9D /* SubdivisionScene.swift in Sources */,
+				6BAAB4B329A250C700837C9D /* ConfigureSheetController.swift in Sources */,
+				6BAAB4AC29A2264700837C9D /* BackgroundScene.swift in Sources */,
+				6BAAB4A229A21CB100837C9D /* Point.swift in Sources */,
+				6BAAB4A929A21F2F00837C9D /* Store.swift in Sources */,
+				6BAAB4A129A21CAD00837C9D /* Point+Extension.swift in Sources */,
+				6BAAB49229A21C9B00837C9D /* AppDelegate.swift in Sources */,
+				6BAAB4A329A21CB100837C9D /* Triangle.swift in Sources */,
+				6BAAB4A429A21CB100837C9D /* Edge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,18 +395,27 @@
 		6BAAB47929A219A600837C9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EUKTZ7725R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSPrincipalClass = SubdivisionSaverView;
+				INFOPLIST_KEY_NSPrincipalClass = SubdivisionSaver.SubdivisionSaverView;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.skillbreak.SubdivisionSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -270,19 +423,85 @@
 		6BAAB47A29A219A600837C9D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EUKTZ7725R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSPrincipalClass = SubdivisionSaverView;
+				INFOPLIST_KEY_NSPrincipalClass = SubdivisionSaver.SubdivisionSaverView;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.skillbreak.SubdivisionSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+		6BAAB49C29A21C9C00837C9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SubdivisionSaver.Preview/SubdivisionSaver_Preview.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EUKTZ7725R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skillbreak.SubdivisionSaver-Preview";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6BAAB49D29A21C9C00837C9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SubdivisionSaver.Preview/SubdivisionSaver_Preview.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EUKTZ7725R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skillbreak.SubdivisionSaver-Preview";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -303,6 +522,15 @@
 			buildConfigurations = (
 				6BAAB47929A219A600837C9D /* Debug */,
 				6BAAB47A29A219A600837C9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BAAB49B29A21C9C00837C9D /* Build configuration list for PBXNativeTarget "SubdivisionSaver.Preview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BAAB49C29A21C9C00837C9D /* Debug */,
+				6BAAB49D29A21C9C00837C9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

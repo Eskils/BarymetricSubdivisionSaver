@@ -32,6 +32,7 @@
 		6BAAB4B029A2509900837C9D /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BAAB4AE29A2509900837C9D /* ConfigureSheet.xib */; };
 		6BAAB4B229A250C700837C9D /* ConfigureSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB4B129A250C700837C9D /* ConfigureSheetController.swift */; };
 		6BAAB4B329A250C700837C9D /* ConfigureSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB4B129A250C700837C9D /* ConfigureSheetController.swift */; };
+		6BC5FDDA29A2A828004E375E /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BC5FDD929A2A828004E375E /* thumbnail.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		6BAAB4AA29A2264700837C9D /* BackgroundScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundScene.swift; sourceTree = "<group>"; };
 		6BAAB4AE29A2509900837C9D /* ConfigureSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
 		6BAAB4B129A250C700837C9D /* ConfigureSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureSheetController.swift; sourceTree = "<group>"; };
+		6BC5FDD929A2A828004E375E /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				6BAAB4AE29A2509900837C9D /* ConfigureSheet.xib */,
 				6BAAB4B129A250C700837C9D /* ConfigureSheetController.swift */,
 				6BAAB4A729A21F2F00837C9D /* Store.swift */,
+				6BC5FDDB29A2A82B004E375E /* Resources */,
 				6BAAB48029A21B8E00837C9D /* Extensions */,
 				6BAAB47F29A21B8200837C9D /* Models */,
 			);
@@ -135,6 +138,14 @@
 				6BAAB49A29A21C9C00837C9D /* SubdivisionSaver_Preview.entitlements */,
 			);
 			path = SubdivisionSaver.Preview;
+			sourceTree = "<group>";
+		};
+		6BC5FDDB29A2A82B004E375E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6BC5FDD929A2A828004E375E /* thumbnail.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BC5FDDA29A2A828004E375E /* thumbnail.png in Resources */,
 				6BAAB4AF29A2509900837C9D /* ConfigureSheet.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

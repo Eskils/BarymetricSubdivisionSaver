@@ -9,8 +9,8 @@ import ScreenSaver
 
 class Store {
     
-    let bundleId = Bundle(for: Store.self).bundleIdentifier!
-    private lazy var defaults = ScreenSaverDefaults(forModuleWithName: bundleId)!
+    private let defaultsId = "SubdivisionSaverStore"
+    private lazy var defaults = ScreenSaverDefaults(forModuleWithName: defaultsId)!
     
     static let defaultForegroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
     static let defaultBackgroundColor = #colorLiteral(red: 0.0, green: 0.1166428402, blue: 0.3413119018, alpha: 1.0)

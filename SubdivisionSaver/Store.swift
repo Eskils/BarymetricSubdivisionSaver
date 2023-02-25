@@ -7,7 +7,33 @@
 
 import ScreenSaver
 
-class Store {
+class StorePubSub {
+    
+    static let shared = StorePubSub()
+    
+    private init() {}
+    
+    var observers = [StoreDelegate]()
+    
+    func removeObserver(_ delegate: StoreDelegate) {
+        observers.removeAll(where: { $0 == delegate })
+    }
+    
+    func addObserver(_ delegate: StoreDelegate) {
+        observers.append(delegate)
+    }
+    
+    func didUpdate() {
+        observers.forEach { $0.storeDidUpdate() }
+    }
+    
+}
+
+protocol StoreDelegate: NSObject {
+    func storeDidUpdate()
+}
+
+class Store: NSObject, StoreDelegate {
     
     private let defaultsId = "SubdivisionSaverStore"
     private lazy var defaults = ScreenSaverDefaults(forModuleWithName: defaultsId)!
@@ -18,6 +44,18 @@ class Store {
     static let defaultPolygon = 7
     static let defaultPloygonCoversScreen = false
     static let defaultRotates = false
+    
+    weak var delegate: StoreDelegate?
+    
+    override init() {
+        super.init()
+        
+        StorePubSub.shared.addObserver(self)
+    }
+    
+    deinit {
+        StorePubSub.shared.removeObserver(self)
+    }
     
     private func getValue<T: NSCoding & NSObject>(named name: String, type: T.Type, fallback: T) -> T {
         guard let encoded = defaults.data(forKey: name) else {
@@ -44,7 +82,7 @@ class Store {
             let data = try NSKeyedArchiver.archivedData(withRootObject: value, requiringSecureCoding: false)
             NSLog("Saved data \(data)")
             defaults.set(data, forKey: name)
-            defaults.synchronize()
+            didUpdate()
         } catch {
             NSLog("Could not encode data: \(error)")
         }
@@ -80,7 +118,7 @@ class Store {
         }
         set(value) {
             defaults.set(value, forKey: "recursionLevel")
-            defaults.synchronize()
+            didUpdate()
         }
     }
     
@@ -94,7 +132,7 @@ class Store {
         }
         set(value) {
             defaults.set(value, forKey: "polygon")
-            defaults.synchronize()
+            didUpdate()
         }
     }
     
@@ -104,7 +142,7 @@ class Store {
         }
         set(value) {
             defaults.set(value, forKey: "polygonCoversScreen")
-            defaults.synchronize()
+            didUpdate()
         }
     }
     
@@ -122,7 +160,16 @@ class Store {
         self.defaults.dictionaryRepresentation().keys.forEach {
             self.defaults.removeObject(forKey: $0)
         }
+        didUpdate()
+    }
+    
+    func didUpdate() {
         self.defaults.synchronize()
+        StorePubSub.shared.didUpdate()
+    }
+    
+    func storeDidUpdate() {
+        delegate?.storeDidUpdate()
     }
     
     

@@ -21,7 +21,7 @@ class SubdivisionScene: SKScene {
     var shapeNodes = [SKShapeNode]()
     var shapeNode: SKShapeNode?
     
-    lazy var pointRadius: CGFloat = 1
+    var pointRadius: CGFloat = 1
     lazy var scale = self.size.width / 3
     var subdivideTime: Double = 0
     
@@ -66,11 +66,6 @@ class SubdivisionScene: SKScene {
         self.edges = makeEdgesConnectingDots(ofPoints: points)
     }
     
-//    func draw() {
-//        draw(edges: self.edges)
-//        draw(points: self.points)
-//    }
-    
     //FIXME: Unrecusrify to reduce function calls
     func drawSubdivision(triangle: Triangle, num: Int = 0, alpha: Double = 1, path: CGMutablePath, progressHandler: ((Double) -> Void)? = nil) {
         let triangles = subdivide(triangle: triangle)
@@ -80,7 +75,6 @@ class SubdivisionScene: SKScene {
             let currentProgress = (i) / numTris
             let delta = 1 / numTris
             draw(edges: triangle.edges, alpha: alpha, toPath: path)
-//            draw(points: triangle.points)
             if num > 0 {
                 drawSubdivision(triangle: triangle, num: num - 1, alpha: alpha * 0.65, path: path) { progress in
                     progressHandler?(currentProgress + progress * delta)
@@ -144,13 +138,7 @@ class SubdivisionScene: SKScene {
     }
     
     func draw(edges: [Edge], alpha: Double = 1, toPath path: CGMutablePath) {
-//        let path = CGMutablePath()
         edges.forEach { $0.draw(toPath: path) }
-        
-//        let shapeNode = makeOrGetShapeNode()
-//        shapeNode.strokeColor = foregroundColor
-//        shapeNode.alpha = alpha
-//        shapeNode.path = path
     }
     
     func makeEdgesConnectingDots(ofPoints points: [DPoint]) -> [Edge] {

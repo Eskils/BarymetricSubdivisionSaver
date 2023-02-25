@@ -26,7 +26,6 @@
 		6BAAB4A629A21CEF00837C9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BAAB4A529A21CEF00837C9D /* Main.storyboard */; };
 		6BAAB4A829A21F2F00837C9D /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB4A729A21F2F00837C9D /* Store.swift */; };
 		6BAAB4A929A21F2F00837C9D /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB4A729A21F2F00837C9D /* Store.swift */; };
-		6BAAB4AC29A2264700837C9D /* BackgroundScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB4AA29A2264700837C9D /* BackgroundScene.swift */; };
 		6BAAB4AD29A2318000837C9D /* SubdivisionScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB47D29A21B7200837C9D /* SubdivisionScene.swift */; };
 		6BAAB4AF29A2509900837C9D /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BAAB4AE29A2509900837C9D /* ConfigureSheet.xib */; };
 		6BAAB4B029A2509900837C9D /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BAAB4AE29A2509900837C9D /* ConfigureSheet.xib */; };
@@ -51,7 +50,6 @@
 		6BAAB49A29A21C9C00837C9D /* SubdivisionSaver_Preview.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SubdivisionSaver_Preview.entitlements; sourceTree = "<group>"; };
 		6BAAB4A529A21CEF00837C9D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		6BAAB4A729A21F2F00837C9D /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
-		6BAAB4AA29A2264700837C9D /* BackgroundScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundScene.swift; sourceTree = "<group>"; };
 		6BAAB4AE29A2509900837C9D /* ConfigureSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
 		6BAAB4B129A250C700837C9D /* ConfigureSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureSheetController.swift; sourceTree = "<group>"; };
 		6BC5FDD929A2A828004E375E /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 			children = (
 				6BAAB47B29A219EC00837C9D /* SubdivisionSaverView.swift */,
 				6BAAB47D29A21B7200837C9D /* SubdivisionScene.swift */,
-				6BAAB4AA29A2264700837C9D /* BackgroundScene.swift */,
 				6BAAB4AE29A2509900837C9D /* ConfigureSheet.xib */,
 				6BAAB4B129A250C700837C9D /* ConfigureSheetController.swift */,
 				6BAAB4A729A21F2F00837C9D /* Store.swift */,
@@ -282,7 +279,6 @@
 				6BAAB49429A21C9B00837C9D /* ViewController.swift in Sources */,
 				6BAAB49F29A21CA800837C9D /* SubdivisionScene.swift in Sources */,
 				6BAAB4B329A250C700837C9D /* ConfigureSheetController.swift in Sources */,
-				6BAAB4AC29A2264700837C9D /* BackgroundScene.swift in Sources */,
 				6BAAB4A229A21CB100837C9D /* Point.swift in Sources */,
 				6BAAB4A929A21F2F00837C9D /* Store.swift in Sources */,
 				6BAAB4A129A21CAD00837C9D /* Point+Extension.swift in Sources */,
@@ -422,6 +418,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.skillbreak.SubdivisionSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -450,6 +447,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.skillbreak.SubdivisionSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -478,6 +476,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.skillbreak.SubdivisionSaver-Preview";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,6 +506,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.skillbreak.SubdivisionSaver-Preview";
 				PRODUCT_NAME = "$(TARGET_NAME)";

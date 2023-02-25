@@ -42,7 +42,7 @@ extension Array where Element == DPoint {
         let max = max ?? Int(ceil(vertices))
         let theta = 2 * Double.pi / vertices
         let h: Double = 1 / (2 * tan(theta / 2))
-        let scale = 1 / h
+        let scale = 1 / sqrt(0.25 + pow(h, 2))
         let initial = DPoint(x: -0.5, y: -h)
         var points = [DPoint]()
         
@@ -54,6 +54,7 @@ extension Array where Element == DPoint {
             points.append(point)
         }
         
+        print(points)
         return points
     }
     

@@ -9,10 +9,12 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet var screenSaverView: SubdivisionSaverView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        screenSaverView.startAnimation()
     }
 
     override var representedObject: Any? {

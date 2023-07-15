@@ -54,7 +54,6 @@ extension Array where Element == DPoint {
             points.append(point)
         }
         
-        print(points)
         return points
     }
     

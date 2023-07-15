@@ -88,4 +88,12 @@ class SubdivisionSaverView: ScreenSaverView, StoreDelegate {
         skViews.forEach { $0.presentScene(scene) }
     }
     
+    override func animateOneFrame() {
+        let currentTime = Date().timeIntervalSince1970
+        skViews.forEach {
+            ($0.scene as? SubdivisionScene)?.animateOneFrame(currentTime: currentTime)
+            $0.scene?.update(currentTime)
+        }
+    }
+    
 }

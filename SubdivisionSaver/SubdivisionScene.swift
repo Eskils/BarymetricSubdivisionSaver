@@ -169,16 +169,12 @@ class SubdivisionScene: SKScene {
     
     var rotationAngle: CGFloat = 0
     
-    override func update(_ currentTime: TimeInterval) {
-        super.update(currentTime)
-        
+    func animateOneFrame(currentTime: TimeInterval) {
         if Int(floor(currentTime / (Double.pi))) % 2 == 1 {
             subdivideTime = 0.5 * cos(currentTime) + 0.5
         } else {
             subdivideTime = 0.5 * sin(currentTime - .pi / 2) + 0.5
         }
-        
-//        rotationAngle = (currentTime / 10).truncatingRemainder(dividingBy: 1) * 2 * Double.pi
         
         let path = CGMutablePath()
         
